@@ -21,7 +21,7 @@
       "cross-env NODE_ENV=production parcel build src/index.html --no-minify --public-url ./",
     "lint": "eslint './src/**/*.{js,jsx,json,md}'; exit 0",
     "test": "mocha",
-    "precommit": "lint-staged && yarn test && yarn lint"
+    "precommit": "lint-staged && yarn lint"
   },
   "lint-staged": {
     "*.{js,json,css,md}": ["prettier --config .prettierrc --write", "git add"]
@@ -30,7 +30,8 @@
     "autoprefixer": "^8.2.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
-    "lint-staged": "^7.0.5",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
     "lodash": "^4.17.5",
     "mobx": "^4.2.0",
     "mobx-react": "^5.0.0",
